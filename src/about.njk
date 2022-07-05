@@ -1,0 +1,16 @@
+---
+pagination:
+  data: about
+  size: 1
+  alias: about
+permalink: 'about/{{ about.url | slugify }}/'
+layout: layout.njk
+csspath: ../../css/
+---
+
+{{ pagination.items | log }}
+
+<ul>
+	<li>{{ about.name }}</li>
+	<li>{{ about.title }}</li>
+</ul>
