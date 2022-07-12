@@ -1,0 +1,38 @@
+[
+    {
+        "itemphotos": [
+            "scenery01.jpg",
+            "scenery02.jpg",
+            "scenery03.jpg",
+            "scenery04.jpg",
+            "scenery05.jpg",
+            "scenery06.jpg"
+        ],
+        "name": "多重露光1",
+        "price": 12,
+        "state": true,
+        "text": "重ね合わせた写真です",
+        "id": 27002,
+        "colors": "黄色",
+        "maker": "景色1",
+        "url": "scenery"
+    },
+    {
+        "itemphotos": [
+            "scenery07.jpg",
+            "scenery08.jpg",
+            "scenery09.jpg",
+            "scenery10.jpg",
+            "scenery11.jpg",
+            "scenery12.jpg"
+        ],
+        "name": "多重露光2",
+        "price": 50,
+        "state": false,
+        "text": "多重になっている写真です",
+        "id": "4710158-2",
+        "colors": "赤",
+        "maker": "景色2",
+        "url": "multiple "
+    }
+]
