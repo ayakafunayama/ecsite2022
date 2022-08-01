@@ -12,11 +12,11 @@ csspath: ./css/
 </ul>
 
 <!-- 各sectionをループで作成 -->
-{% for topPhoto in products %}
+{% for photo in products %}
 <section class="{{ topPhoto.url }}">
-	<h2>{{ topPhoto.name }}</h2>
+	<h2>{{ photo.name }}</h2>
 	<div class="mainimage">
-		<img src="images/{{ topPhoto.itemphotos[0] }}" alt="{{ topPhotos.name }}メイン画像" />
+		<img src="./images/{{ photo.itemphotos[0] }}" alt="{{ photos.name }}メイン画像" />
 	</div>
 </section>
 {% endfor %}
