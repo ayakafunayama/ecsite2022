@@ -13,9 +13,9 @@ csspath: ./css/
 <img src="./images/cart_icon.png" alt="">
 
 <!-- 各sectionをループで作成 -->
-{% for products in products %}
+{% for topPhoto in products %}
 <section class="{{ topPhoto.url }}">
-	<h2>{{ products.name }}</h2>
+	<h2>{{ topPhoto.name }}</h2>
 	<div class="photo___img">
 		<img src="./images/{{ topPhoto.itemphotos[0] }}" alt="{{ topPhoto.name }}" />
 	</div>
