@@ -7,16 +7,16 @@ csspath: ./css/
 
 <h1>{{ title }}</h1>
 <ul>
-	<li><a href="./home">home</a></li>
+	<li><a href="./index">home</a></li>
 	<li><a href="./photo">about</a></li>
 </ul>
 
 <!-- 各sectionをループで作成 -->
 {% for photo in products %}
-<section class="{{ topPhoto.url }}">
+<section class="photo">
 	<h2>{{ photo.name }}</h2>
-	<div class="mainimage">
-		<img src="./images/{{ photo.itemphotos[0] }}" alt="{{ photos.name }}メイン画像" />
+	<div class="photo___img">
+		<img src="./images/{{ photo.itemphotos[0] }}" alt="{{ photos.maker }}" />
 	</div>
 </section>
 {% endfor %}
