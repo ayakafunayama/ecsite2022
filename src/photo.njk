@@ -10,11 +10,11 @@ permalink: 'photo/{{ pagination.items[0].url | slugify }}/'
 	<li>{{ pagination.items[0].price }}</li>
 </ul>
 
-<img src="/images/{{ pagination.items[0].itemphotos[0] }}" />
-<img src="/images/{{ pagination.items[0].itemphotos[1] }}" />
-<img src="/images/{{ pagination.items[0].itemphotos[2] }}" />
+<img src="./images/{{ pagination.items[0].itemphotos[0] }}" />
+<img src="./images/{{ pagination.items[0].itemphotos[1] }}" />
+<img src="./images/{{ pagination.items[0].itemphotos[2] }}" />
 
 <!--  画像をループで取得 -->
 {% for photo in pagination.items[0].itemphotos %}
-<img src="/images/{{ photo }}" />
+<img src="./images/{{ photo }}" />
 {% endfor %}
