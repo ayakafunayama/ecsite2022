@@ -14,10 +14,10 @@ csspath: ./css/
 
 <!-- 各sectionをループで作成 -->
 {% for products in products %}
-<section class="{{ products.url }}">
+<section class="{{ topPhoto.url }}">
 	<h2>{{ products.name }}</h2>
 	<div class="photo___img">
-		<img src="./images/{{ products.itemphotos[0] }}" alt="{{ products.maker }}" />
+		<img src="./images/{{ topPhoto.itemphotos[0] }}" alt="{{ topPhoto.name }}" />
 	</div>
 </section>
 {% endfor %}
