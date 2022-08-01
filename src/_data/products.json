@@ -126,7 +126,9 @@
         "null": null
     },
     {
-        "itemphotos": "[\"scenery10.jpg\"\"]",
+        "itemphotos": [
+            "scenery10.jpg"
+        ],
         "name": "紅葉パズル",
         "price": 500,
         "state": "TRUE",
