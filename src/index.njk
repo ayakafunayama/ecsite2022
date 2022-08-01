@@ -1,5 +1,5 @@
 ---
-title: Fleurs
+title: Fleury
 permalink: 'index/{{ index.url | slugify }}/'
 layout: layout.njk
 csspath: ./css/
@@ -10,14 +10,16 @@ csspath: ./css/
 	<li><a href="./index">HOME</a></li>
 	<li><a href="./photo">ABOUT</a></li>
 </ul>
+<img src="./images/cart_icon.png" alt="">
 
 <!-- 各sectionをループで作成 -->
-{% for photo in products %}
-<section class="photo">
-	<h2>{{ photo.name }}</h2>
+{% for products in products %}
+<section class="{{ products.url }}">
+	<h2>{{ products.name }}</h2>
 	<div class="photo___img">
-		<img src="./images/{{ photo.itemphotos[0] }}" alt="{{ photos.maker }}" />
+		<img src="./images/{{ products.itemphotos[0] }}" alt="{{ products.maker }}" />
 	</div>
 </section>
 {% endfor %}
+
 
