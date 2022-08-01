@@ -5,21 +5,41 @@ layout: layout.njk
 csspath: ./css/
 ---
 
-<h1>{{ title }}</h1>
+<header class="header">
+	<h1>{{ title }}</h1>
 <ul>
 	<li><a href="./index">HOME</a></li>
 	<li><a href="./photo">ABOUT</a></li>
 </ul>
-<img src="./images/cart_icon.png" alt="">
+<img src="../../images/2/cart_icon.png" alt="">
+</header>
 
-<!-- 各sectionをループで作成 -->
-{% for products in products %}
-<section class="{{ products.url }}">
-	<h2>{{ products.name }}</h2>
-	<div class="photo___img">
-		<img src="./images/{{ products.itemphotos[0] }}" alt="{{ products.name }}" />
+<main class="main">
+
+	<div class="main___header">
+		<h2>多重露光した、写真です。<br>
+		This is a multiple exposure photo.</h2>
 	</div>
-</section>
-{% endfor %}
+
+	<div class="main___main">
+		<h3>ABOUT</h3>
+		<p>Fleuryとは？</p>
+		<p></p>
+		<p>and more....</p>
+
+	<h4>PRODUCTS</h4>
+	<p>取り扱い商品</p>
+	<!-- 各sectionをループで作成 -->
+		{% for product in products %}
+		<section class="{{ product.url }}">
+			<h2>{{ product.name }}</h2>
+			<div class="photo___img">
+				<img src="../../images/{{ product.itemphotos[0] }}" alt="{{ product.name }}" />
+			</div>
+		</section>
+		{% endfor %}
+	</div>
+
+</main>
 
 
