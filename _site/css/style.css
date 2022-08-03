@@ -1,0 +1,86 @@
+body {
+  background-color: #fff;
+  font-family: "ten-mincho", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 30px 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.header___nav {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+}
+.header___nav ul {
+  display: flex;
+}
+.header___nav li {
+  display: block;
+  list-style: none;
+  margin: 10px;
+}
+.header___nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main {
+  display: block;
+}
+.main___header h2 {
+  position: absolute;
+  margin: 200px 100px;
+}
+.main___header img {
+  position: relative;
+  margin-left: 40%;
+}
+.main___main .fl {
+  font-size: 14px;
+  margin-top: -20px;
+}
+.main___main h3 {
+  margin-top: 100px;
+}
+
+.more {
+  border: 1px solid #000;
+  width: 160px;
+  padding: 20px 140px;
+  margin: 50px 0px 100px;
+}
+
+.more:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.remove {
+  display: none;
+}
+
+.h2___sm {
+  font-size: 18px;
+}
+
+.about {
+  text-align: center;
+}
+.about___block {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

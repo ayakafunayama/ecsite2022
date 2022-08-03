@@ -6,41 +6,57 @@ csspath: ./css/
 ---
 
 <header class="header">
-	<h1>{{ title }}</h1>
-<ul>
-	<li><a href="./index">HOME</a></li>
-	<li><a href="./photo">ABOUT</a></li>
-</ul>
-<img src="../../images/2/cart_icon.png" alt="">
+	<h1><img width="58px" src="../../images/2/fleury.png" alt=""><br>{{ title }}</h1>
+	<nav class="header___nav">
+		<ul>
+			<li><a href="/.../index">HOME</a></li>
+			<li><a href="../photo">ABOUT</a></li>
+			<li><img width="15" src="../../images/2/cart_icon.png" alt=""></li>
+		</ul>
+	</nav>
 </header>
 
 <main class="main">
 
 	<div class="main___header">
 		<h2>多重露光した、写真です。<br>
-		This is a multiple exposure photo.</h2>
+		<span class="h2___sm">This is a multiple exposure photo.</span></h2>
+		<img width="1020" src="../../images/scenery10.jpg" alt="">
 	</div>
 
 	<div class="main___main">
-		<h3>ABOUT</h3>
-		<p>Fleuryとは？</p>
-		<p></p>
-		<p>and more....</p>
+		<div class="about">
+			<div class="about___block">
+				<h3>ABOUT</h3>
+				<p class="fl">Fleuryとは？</p>
+				<p class="txt">Fleuryは、景色との重ねた写真を売っているショップです。<br>
+				花 fleurと景色 sceneryを掛け合わせた名前にしました。</p>
+				<p class="and more">and more....</p>
+			</div>
+		</div>
 
-	<h4>PRODUCTS</h4>
+	<h3>PRODUCTS</h3>
 	<p>取り扱い商品</p>
 	<!-- 各sectionをループで作成 -->
+	<div class="product___photo">
 		{% for product in products %}
 		<section class="{{ product.url }}">
-			<h2>{{ product.name }}</h2>
 			<div class="photo___img">
 				<img width="500" src="../../images/{{ product.itemphotos[0] }}" alt="{{ product.name }}" />
+				<h4>{{ product.name }}</h4>
+				<p>¥{{ product.price }}</p>
 			</div>
 		</section>
 		{% endfor %}
-		<p>VIEW MORE</p>
+	</div>
+		<p class="view more">VIEW MORE</p>
 	</div>
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
+	<h4><img width="58px" src="../../images/2/fleury.png" alt="">Fleury</h4>
+	<div class="copyright">
+		<small>©︎2022 Fleury Ltd.</small>
+	</div>
+</footer>
 
 
