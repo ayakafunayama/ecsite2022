@@ -35,26 +35,33 @@ csspath: ./css/
 			</div>
 		</div>
 
-	<h3>PRODUCTS</h3>
-	<p>取り扱い商品</p>
-	<!-- 各sectionをループで作成 -->
-	<div class="product___photo">
-		{% for product in products %}
-		<section class="{{ product.url }}">
-			<div class="photo___img">
-				<img width="500" src="../../images/{{ product.itemphotos[0] }}" alt="{{ product.name }}" />
-				<h4>{{ product.name }}</h4>
-				<p>¥{{ product.price }}</p>
-				<button class="btn">{{ product.state }}</button>
+		<div class="product">
+			<h3>PRODUCTS</h3>
+			<p>取り扱い商品</p>
+			<div class="photo">
+				<!-- 各sectionをループで作成 -->
+			<div class="product___photo">
+				{% for product in products %}
+				<section class="{{ product.url }}">
+					<div class="photo___img">
+						<img width="500" src="../../images/{{ product.itemphotos[0] }}" alt="{{ product.name }}" />
+						<h4>{{ product.name }}</h4>
+						<p>¥{{ product.price }}</p>
+						<button class="btn">SOLDD OUT</button>
+					</div>
+				</section>
+				{% endfor %}
 			</div>
-		</section>
-		{% endfor %}
-	</div>
-		<p class="view more">VIEW MORE</p>
+			<div class="product___view">
+				<p class="view more">VIEW MORE</p>
+			</div>
+		</div>
 	</div>
 </main>
 <footer class="footer">
-	<h4><img width="58px" src="../../images/2/fleury.png" alt="">Fleury</h4>
+	<div class="footer___h4">
+		<h4><span><img width="58px" src="../../images/2/fleury.png" alt=""></span><span class="strong">Fleury</span></h4>
+	</div>
 	<div class="copyright">
 		<small>©︎2022 Fleury Ltd.</small>
 	</div>

@@ -28,12 +28,12 @@ for(let i=0;i<aImg.length;i++){
 }
 
 //●sold out
-let a = document.querySelectorAll(“.ボタンのクラス名（CSSで先に見た目を作る）“)
+let a = document.querySelectorAll("btn")
 for(let i=0;i<a.length;i++){
     let text = a[i].innerHTML;
-    if(text ==“true”){
-        a[i].innerHTML=“在庫有”
+    if(text =="true"){
+        a[i].innerHTML="在庫有"
     }else{
-        a[i].innerHTML=“在庫無”
+        a[i].innerHTML="在庫無"
     }
 }

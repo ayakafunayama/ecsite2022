@@ -66,6 +66,9 @@ h3{
     padding: 20px 140px;
     margin: 50px 0px 100px;
 }
+.view{
+    display: inline-block;
+}
 .more:hover{
     color: #fff;
     background-color: #000;
@@ -87,4 +90,44 @@ h3{
     &___block{
         display: inline-block;
     }
+}
+
+.btn{
+    background-color: #fff;
+    color: #000;
+}
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.product{
+    &___photo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &___view{
+        text-align: center;
+    }
+}
+
+.photo___img{
+    margin: 30px 10% 10px 10%;
+}
+.footer{
+    display: flex;
+    margin-left: 50px;
+    & h4{
+        display: flex;
+    }
+}
+.strong{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.copyright{
+    padding-top: 70px;
+    margin-left: 82%;
 }
