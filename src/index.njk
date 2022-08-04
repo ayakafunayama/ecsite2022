@@ -9,7 +9,7 @@ csspath: ./css/
 	<h1><img width="58px" src="../../images/2/fleury.png" alt=""><br>{{ title }}</h1>
 	<nav class="header___nav">
 		<ul>
-			<li><a href="/.../index">HOME</a></li>
+			<li><a href="../../index">HOME</a></li>
 			<li><a href="../photo">ABOUT</a></li>
 			<li><img width="15" src="../../images/2/cart_icon.png" alt=""></li>
 		</ul>
@@ -45,6 +45,7 @@ csspath: ./css/
 				<img width="500" src="../../images/{{ product.itemphotos[0] }}" alt="{{ product.name }}" />
 				<h4>{{ product.name }}</h4>
 				<p>¥{{ product.price }}</p>
+				<button class="btn">{{ product.state }}</button>
 			</div>
 		</section>
 		{% endfor %}
