@@ -5,7 +5,7 @@
 ## 完成品
 
 <!-- 完成後、ここにURLを貼ってください。-->
-https://whoo.moo.jp/_site/
+https://whoo.moo.jp/_site/index/undefined/index.html
 
 ## Features
 
